@@ -1,0 +1,197 @@
+#campaign {
+
+  @media(min-width:1200px)
+  {
+    main {
+      display: grid;
+      grid-template-rows: minmax(10vh, max-content) 75vh 75vh 90vh;
+
+      h2 {
+        text-align: center;
+        color:$purple;
+        font-size: 3rem;
+        align-self: center;
+        justify-self: center;
+      }
+
+      section {
+        display: grid;
+
+        &:first-of-type {
+          grid-template-columns: 40% 60%;
+          row-gap: 1.5rem;
+
+          figure {
+            display: grid;
+
+            img {
+              width:100%;
+            }
+          }
+
+          h3 {
+            font-size: 3rem;
+            background-color: $red;
+            color:$white;
+            text-transform: uppercase;
+            padding:0.8rem 1rem;
+          }
+
+          p {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            padding:2rem 1rem;
+          }
+        }
+
+        &:nth-of-type(2) {
+          grid-template-columns: 60% 40%;
+          row-gap: 1.5rem;
+
+          figure {
+            display: grid;
+
+            img {
+              width:100%;
+            }
+          }
+
+          h3 {
+            font-size: 3rem;
+            background-color: $green;
+            color:$white;
+            text-transform: uppercase;
+            padding:0.8rem 1rem;
+          }
+
+          p {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            padding:2rem 1rem;
+          }
+        }
+
+        &:last-of-type {
+          grid-template-columns: 1fr;
+
+          h3 {
+            font-size: 3rem;
+            background-color: $pink;
+            text-align: center;
+            color:$white;
+            text-transform: uppercase;
+            padding:0.8rem 1rem;
+
+            a {
+              color:$white;
+            }
+          }
+
+          figure{
+            img {
+              width:100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media(max-width:1199.99px)
+  {
+    main {
+      display: grid;
+      grid-template-rows: minmax(10vh, max-content) minmax(75vh, max-content) minmax(75vh, max-content) minmax(50vh, max-content);
+
+      h2 {
+        text-align: center;
+        color:$purple;
+        font-size: 3rem;
+        align-self: center;
+        justify-self: center;
+      }
+
+      section {
+        display: grid;
+
+        &:first-of-type {
+          grid-template-columns: 1fr;
+          row-gap: 1.5rem;
+
+          figure {
+            display: grid;
+
+            img {
+              width:100%;
+            }
+          }
+
+          h3 {
+            font-size: 3rem;
+            background-color: $red;
+            color:$white;
+            text-transform: uppercase;
+            padding:0.8rem 1rem;
+          }
+
+          p {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            padding:2rem 1rem;
+          }
+        }
+
+        &:nth-of-type(2) {
+          grid-template-columns: 1fr;
+          row-gap: 1.5rem;
+
+          figure {
+            display: grid;
+            order:-1;
+
+            img {
+              width:100%;
+            }
+          }
+
+          h3 {
+            font-size: 3rem;
+            background-color: $green;
+            color:$white;
+            text-transform: uppercase;
+            padding:0.8rem 1rem;
+          }
+
+          p {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            padding:2rem 1rem;
+          }
+        }
+
+        &:last-of-type {
+          grid-template-columns: 1fr;
+
+          h3 {
+            font-size: 3rem;
+            background-color: $pink;
+            text-align: center;
+            color:$white;
+            text-transform: uppercase;
+            padding:0.8rem 1rem;
+
+            a {
+              color:$white;
+            }
+          }
+
+          figure{
+            img {
+              width:100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

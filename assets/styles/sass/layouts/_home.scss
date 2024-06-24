@@ -1,0 +1,167 @@
+#home {
+  @media(min-width: 1200px)
+  {
+    background-image: url("/assets/img/home.jpg");
+    background-size: cover;
+
+    main {
+      display: grid;
+      grid-template-rows: 65% 35%;
+      align-items: center;
+      justify-content: center;
+
+      figure {
+        display: none;
+      }
+
+      h2 {
+        font-size: 3rem;
+        background-color: $red;
+        color:$white;
+        padding:1.5rem 1rem;
+        text-align: center;
+        line-height: 3.5rem;
+        align-self: end;
+
+        span {
+          font-size: 2rem;
+        }
+      }
+
+      nav {
+        margin-top: 2.5rem;
+        align-self: start;
+        display: grid;
+        align-items: center;
+
+        ul {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          column-gap: 2rem;
+          font-size: 1.8rem;
+          text-transform: uppercase;
+
+          li {
+            padding:1rem 1.5rem;
+            text-align: center;
+
+            a {
+              text-decoration: none;
+
+              &:hover {
+                text-decoration: underline;
+                text-underline-offset: 0.3rem;
+              }
+            }
+
+            &:first-of-type {
+              background-color: $purple;
+
+              a {
+                color:$white;
+              }
+            }
+
+            &:nth-of-type(2) {
+              background-color: $green;
+
+              a {
+                color:$white;
+              }
+            }
+
+            &:nth-of-type(3) {
+              background-color: $yellow;
+
+              a {
+                color:$black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media(max-width: 1199.99px)
+  {
+
+    main {
+      display: grid;
+      grid-template-rows: 25% 25% 50%;
+
+      figure {
+
+        img {
+          width:100%;
+        }
+      }
+
+      h2 {
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        font-size: 1.8rem;
+        color:$white;
+        background-color: $red;
+        padding:1rem 1.5rem;
+        line-height: 2rem;
+
+        span {
+          font-size: 1.5rem;
+        }
+      }
+
+      nav {
+        justify-self: center;
+
+        ul {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          column-gap: 2rem;
+          row-gap: 2rem;
+
+          li {
+            padding:1rem 1.5rem;
+            text-align: center;
+            font-size: 1.5rem;
+
+            a {
+              text-decoration: none;
+
+              &:hover {
+                text-decoration: underline;
+                text-underline-offset: 0.3rem;
+              }
+            }
+
+            &:nth-of-type(2) {
+              background-color: $green;
+
+              a {
+                color:$white;
+              }
+            }
+
+            &:first-of-type {
+              background-color: $purple;
+
+              a {
+                color:$white;
+              }
+            }
+
+            &:last-of-type {
+              background-color: $yellow;
+              border:1px solid $black;
+
+              a {
+                color:$black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

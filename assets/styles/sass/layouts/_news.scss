@@ -1,0 +1,219 @@
+#news,#press {
+
+  @media(min-width: 1200px)
+  {
+      main {
+        padding-bottom: 3rem;
+        display: grid;
+        grid-template-rows: 15vh minmax(85vh, max-content);
+        grid-template-columns: 15% 70% 15%;
+
+        h2 {
+          align-self: center;
+          justify-self: center;
+          font-size: 3rem;
+          text-transform: uppercase;
+          color:$red;
+          grid-column: 1 / 4;
+        }
+
+        & > ul {
+          grid-column: 2 / 3;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          column-gap: 2rem;
+          row-gap: 3rem;
+
+          li {
+            &:nth-of-type(odd) {
+              h3 {
+                color:$purple;
+              }
+
+              a {
+                color:$purple;
+              }
+            }
+
+            &:nth-of-type(even) {
+              h3 {
+                color:$green;
+              }
+
+              a {
+                color:$green;
+              }
+            }
+          }
+
+          article {
+
+            header {
+              margin-bottom: 1rem;
+
+              img {
+                width:100%;
+              }
+
+              h3 {
+                margin-top: 1rem;
+                font-size: 2rem;
+                margin-bottom: 0.8rem;
+              }
+            }
+
+            footer {
+              margin-top: 1rem;
+              font-size: 1.2rem;
+            }
+
+          }
+        }
+      }
+  }
+
+  @media(min-width: 500px) and (max-width: 1199.99px)
+  {
+    main {
+      padding-bottom: 3rem;
+      display: grid;
+      grid-template-rows: 15vh minmax(85vh, max-content);
+      grid-template-columns: 5% 90% 5%;
+
+      h2 {
+        align-self: center;
+        justify-self: center;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color:$red;
+        grid-column: 1 / 4;
+      }
+
+      & > ul {
+        grid-column: 2 / 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+
+        li {
+          &:nth-of-type(odd) {
+            h3 {
+              color:$purple;
+            }
+
+            a {
+              color:$purple;
+            }
+          }
+
+          &:nth-of-type(even) {
+            h3 {
+              color:$green;
+            }
+
+            a {
+              color:$green;
+            }
+          }
+        }
+
+        article {
+
+          header {
+            margin-bottom: 1rem;
+
+            img {
+              width:100%;
+            }
+
+            h3 {
+              margin-top: 1rem;
+              font-size: 2rem;
+              margin-bottom: 0.8rem;
+            }
+          }
+
+          footer {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            text-align: start;
+          }
+
+        }
+      }
+    }
+  }
+
+  @media(max-width: 499.99px)
+  {
+    main {
+      padding-bottom: 3rem;
+      display: grid;
+      grid-template-rows: 15vh minmax(85vh, max-content);
+      grid-template-columns: 5% 90% 5%;
+
+      h2 {
+        align-self: center;
+        justify-self: center;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color:$red;
+        grid-column: 1 / 4;
+      }
+
+      & > ul {
+        grid-column: 2 / 3;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+
+        li {
+          &:nth-of-type(odd) {
+            h3 {
+              color:$purple;
+            }
+
+            a {
+              color:$purple;
+            }
+          }
+
+          &:nth-of-type(even) {
+            h3 {
+              color:$green;
+            }
+
+            a {
+              color:$green;
+            }
+          }
+        }
+
+        article {
+
+          header {
+            margin-bottom: 1rem;
+
+            img {
+              width:100%;
+            }
+
+            h3 {
+              margin-top: 1rem;
+              font-size: 2rem;
+              margin-bottom: 0.8rem;
+            }
+          }
+
+          footer {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            text-align: start;
+          }
+
+        }
+      }
+    }
+  }
+}
