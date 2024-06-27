@@ -474,7 +474,7 @@ table {
         #campaign main section:first-of-type p {
           font-size: 1.4rem;
           line-height: 1.6rem;
-          padding: 2rem 1rem; }
+          padding: 1rem; }
       #campaign main section:nth-of-type(2) {
         grid-template-columns: 60% 40%;
         row-gap: 1.5rem; }
@@ -491,7 +491,7 @@ table {
         #campaign main section:nth-of-type(2) p {
           font-size: 1.4rem;
           line-height: 1.6rem;
-          padding: 2rem 1rem; }
+          padding: 1rem; }
       #campaign main section:last-of-type {
         grid-template-columns: 1fr; }
         #campaign main section:last-of-type h3 {
@@ -533,7 +533,7 @@ table {
         #campaign main section:first-of-type p {
           font-size: 1.2rem;
           line-height: 1.5rem;
-          padding: 2rem 1rem; }
+          padding: 1rem; }
       #campaign main section:nth-of-type(2) {
         grid-template-columns: 1fr;
         row-gap: 1.5rem; }
@@ -551,7 +551,7 @@ table {
         #campaign main section:nth-of-type(2) p {
           font-size: 1.2rem;
           line-height: 1.5rem;
-          padding: 2rem 1rem; }
+          padding: 1rem; }
       #campaign main section:last-of-type {
         grid-template-columns: 1fr; }
         #campaign main section:last-of-type h3 {
